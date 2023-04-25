@@ -1,0 +1,58 @@
+$blur: 20px;
+$image: '../../assets/166105.jpg';
+
+// *,
+// *:before,
+// *:after {
+// 	box-sizing: border-box;
+// }
+
+.content {
+	width: 100vw;
+	height: 100vh;
+	// z-index: -2;
+	background-image: linear-gradient(
+		0deg,
+		#dbdcd7 0%,
+		#dddcd7 24%,
+		#e2c9cc 30%,
+		#e7627d 46%,
+		#b8235a 59%,
+		#801357 71%,
+		#3d1635 84%,
+		#1c1a27 100%
+	);
+	// background: #ffffff url(../../assets/bark_willow_02_arm_4k.png) no-repeat right top;
+	.texture {
+		width: 100%;
+		height: 100%;
+		// background-image: linear-gradient(0deg, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
+		background-image: url(../../assets/texture.png);
+		// background-image: url(../../assets/bark_willow_02_arm_4k.png);
+		.page-main {
+			height: calc(100% - 100px);
+			// z-index: 8;
+		}
+		.buttom-column {
+			z-index: 9;
+			user-select: none;
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			height: 100px;
+			box-shadow: 0 0.3px 0.7px rgba(0, 0, 0, 0.126), 0 0.9px 1.7px rgba(0, 0, 0, 0.179),
+				0 1.8px 3.5px rgba(0, 0, 0, 0.224), 0 3.7px 7.3px rgba(0, 0, 0, 0.277), 0 10px 20px rgba(0, 0, 0, 0.4);
+			backdrop-filter: saturate(-1%) blur(20px);
+			transition: 0.5s ease;
+
+			&:hover {
+				transform: translate(0, -5px);
+				box-shadow: 0 0.7px 33.7px 32px rgba(0, 0, 0, 0.157), 0 1.7px 2.6px rgba(0, 0, 0, 0.224),
+					0 3.5px 5.3px rgba(0, 0, 0, 0.28), 0 7.3px 11px rgba(0, 0, 0, 0.346), 0 20px 30px rgba(0, 0, 0, 0.5);
+			}
+		}
+	}
+	// background-image: url(../../assets/texture.png);
+}
